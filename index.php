@@ -1,5 +1,4 @@
 ﻿<?php
-session_start();
 include 'anti/anti1.php';
 include 'anti/anti2.php';
 include 'anti/anti3.php';
